@@ -86,9 +86,9 @@ jobs:
                 echo "CONFIG_TARGET_ipq807x_generic=y" >> $OPENWRT_ROOT_PATH/.config
                 echo "CONFIG_TARGET_ipq807x_generic_DEVICE_redmi_ax6=y" >> $OPENWRT_ROOT_PATH/.config
               else
-                echo "CONFIG_TARGET_x86=y" >> $OPENWRT_ROOT_PATH/.config
-                echo "CONFIG_TARGET_x86_64=y" >> $OPENWRT_ROOT_PATH/.config
-                echo "CONFIG_TARGET_x86_64_DEVICE_generic=y" >> $OPENWRT_ROOT_PATH/.config
+                echo "CONFIG_TARGET_arm=y" >> $OPENWRT_ROOT_PATH/.config
+                echo "CONFIG_TARGET_arm64=y" >> $OPENWRT_ROOT_PATH/.config
+                echo "CONFIG_TARGET_arm64_DEVICE_generic=y" >> $OPENWRT_ROOT_PATH/.config
               fi
               make defconfig
               
